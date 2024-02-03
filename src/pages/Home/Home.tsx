@@ -1,9 +1,10 @@
 import Container from "@/layouts/Container";
+import HeroSection from "./HeroSection";
 
 const Home = () => {
   return (
     <Container>
-      <h2>This is Home component</h2>
+      <HeroSection />
     </Container>
   );
 };
