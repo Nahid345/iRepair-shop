@@ -4,9 +4,9 @@ import mackbook from "@/assets/images/macbook-exposed.png";
 
 const HeroSection = () => {
   return (
-    <Container className="h-[calc(100vh-64px)] grid grid-cols-2 place-content-center">
+    <Container className="h-[calc(100vh-64px)] grid grid-cols-1 lg:grid-cols-2 place-content-center">
       <div>
-        <h1 className="text-5xl lg:text-8xl font-bold">
+        <h1 className="text-5xl lg:text-8xl font-bold text-nowrap">
           <span className="text-gray">Don't worry,</span> <br />
           <span> We'll fix it.</span>
         </h1>
@@ -23,8 +23,12 @@ const HeroSection = () => {
         </p>
         <Button>Book a service</Button>
       </div>
-      <div>
-        <img className="-rotate-[30deg]  h-[80%]" src={mackbook} alt="" />
+      <div className="mt-10 w-3/4 lg:w-full mx-auto ">
+        <img
+          className="-rotate-[35deg] h-[90%] object-contain "
+          src={mackbook}
+          alt=""
+        />
       </div>
     </Container>
   );
